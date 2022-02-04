@@ -1,4 +1,0 @@
-EXPRESSÕES EM JSX
-
-1° - Expressão: foi criado a variavel name então a usamos dentro do JSX ao envolvê-la com chaves;
-2° - Expressão: Separamos o JSX em múltiplas linhas para melhorar a legibilidade. Por exemplo 2 + 2, user.firstName, ou formatName(user) são todas expressões JavaScript válidas;

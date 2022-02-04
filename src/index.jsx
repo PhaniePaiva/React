@@ -28,22 +28,41 @@ ReactDOM.render(
 
 
 //2° - Expressão;
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
+// function formatName(user) {
+//   return user.firstName + ' ' + user.lastName;
+// }
+
+// const user = {
+//   firstName: 'Creuza',
+//   lastName: 'Raimundo'
+// };
+
+// const element = (
+//   <h1>
+//     Olá, {formatName(user)}!
+//   </h1>
+// );
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+const element = <h1>Olá, Mundão</h1>;
+
+function tick() {
+  const element = (
+    <div>
+      <h1>Olá, Kaylane!</h1>
+      <h2>Horário {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDOM.render(element, document.getElementById('root'));
 }
+setInterval(tick, 1000);
 
-const user = {
-  firstName: 'Creuza',
-  lastName: 'Raimundo'
-};
 
-const element = (
-  <h1>
-    Olá, {formatName(user)}!
-  </h1>
-);
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+
+// ReactDOM.render(
+//   element,
+//   document.getElementById('root')
+// );

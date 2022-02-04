@@ -23,3 +23,5 @@ O React não requer o uso do JSX. Porém, a maioria das pessoas acha prático co
 #
 #### OBS: JSX também pode ser uma expressão que se transformam em chamadas normais de funções que retornam objetos podendo ser utlizads em condições if e laços for.
 #
+# Renderizando Elementos
+OBS: Na prática, a maioria dos aplicativos React usam o <code>ReactDOM.render()</code> apenas uma única vez ele é o responsável por atualizar o DOM para exibir os elementos React.

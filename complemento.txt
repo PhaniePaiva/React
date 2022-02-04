@@ -1,0 +1,14 @@
+EXPRESSÕES EM JSX
+
+1° - Expressão: foi criado a variavel name então a usamos dentro do JSX ao envolvê-la com chaves;
+2° - Expressão: Separamos o JSX em múltiplas linhas para melhorar a legibilidade. Por exemplo 2 + 2, user.firstName, ou formatName(user) são todas expressões JavaScript válidas;
+
+RENDERINZANDO ELEMENTOS
+
+Nó raiz do DOM porque tudo dentro dele será gerenciado pelo React DOM.
+
+- Um elemento descreve o que você quer ver na tela:  O React DOM é o responsável por atualizar o DOM para exibir os elementos React.
+- Elementos React são imutáveis. Uma vez criados, você não pode alterar seus elementos filhos ou atributos.
+O setInterval() é uma função temporizadora. 
+- Ela executa uma função de retorno após determinado tempo. 
+- A função setInterval() executará infinitamente, até que você execute a função clearInterval().
