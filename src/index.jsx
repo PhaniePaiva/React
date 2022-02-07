@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import './index.css';
 import App from './App';
-//import reportWebVitals from './reportWebVitals';
+import Comment from './componentes/Comment';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -34,35 +33,61 @@ ReactDOM.render(
 
 // const user = {
 //   firstName: 'Creuza',
-//   lastName: 'Raimundo'
+//   lastName: ''
 // };
+
+// function getGreeting(user) {
+//   if (user) {
+//     return <h1>Hello, {formatName(user)}!</h1>;
+//   }
+//   return <h1>Hello, Stranger.</h1>;
+// }
 
 // const element = (
 //   <h1>
-//     Olá, {formatName(user)}!
+//     {getGreeting(user)}
 //   </h1>
 // );
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-const element = <h1>Olá, Mundão</h1>;
+// const element = <h1>Olá, Mundão</h1>;
 
-function tick() {
-  const element = (
-    <div>
-      <h1>Olá, Kaylane!</h1>
-      <h2>Horário {new Date().toLocaleTimeString()}.</h2>
-    </div>
-  );
-  ReactDOM.render(element, document.getElementById('root'));
-}
-setInterval(tick, 1000);
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Olá, Kaylane!</h1>
+//       <h2>Horário {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   );
+//   ReactDOM.render(element, document.getElementById('root'));
+// }
+// setInterval(tick, 1000);
 
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+//RENDERIZANDO COMPONENTES
 
-// ReactDOM.render(
-//   element,
-//   document.getElementById('root')
-// );
+
+// Comopnente de Função
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
+
+// Comopnentes de classe ES6
+// class Welcome extends React.Component {
+  
+// render() {
+//    return <h1>Hello, {this.props.name}</h1>;
+//   }
+// }
+const element = <Comment avatarUrl= 'https://avatars.githubusercontent.com/u/20023147?v=4'
+name= 'Bruno'
+text= 'lorem ipsum dolor set amment'
+date= '1994-11-21' />;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);

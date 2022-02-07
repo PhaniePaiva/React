@@ -3,7 +3,7 @@ EXPRESSÕES EM JSX
 1° - Expressão: foi criado a variavel name então a usamos dentro do JSX ao envolvê-la com chaves;
 2° - Expressão: Separamos o JSX em múltiplas linhas para melhorar a legibilidade. Por exemplo 2 + 2, user.firstName, ou formatName(user) são todas expressões JavaScript válidas;
 
-RENDERINZANDO ELEMENTOS
+RENDERIZANDO ELEMENTOS
 
 Nó raiz do DOM porque tudo dentro dele será gerenciado pelo React DOM.
 
@@ -12,3 +12,9 @@ Nó raiz do DOM porque tudo dentro dele será gerenciado pelo React DOM.
 O setInterval() é uma função temporizadora. 
 - Ela executa uma função de retorno após determinado tempo. 
 - A função setInterval() executará infinitamente, até que você execute a função clearInterval().
+
+COMPONENTES E PROPS
+
+Nota: Sempre inicie os nomes dos componentes com uma letra maiúscula.
+
+O React trata componentes começando com letras minúsculas como tags do DOM. Por exemplo, <div /> representa uma tag div do HTML, mas <Welcome /> representa um componente e requer que Welcome esteja no escopo.

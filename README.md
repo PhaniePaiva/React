@@ -25,3 +25,31 @@ O React não requer o uso do JSX. Porém, a maioria das pessoas acha prático co
 #
 # Renderizando Elementos
 OBS: Na prática, a maioria dos aplicativos React usam o <code>ReactDOM.render()</code> apenas uma única vez ele é o responsável por atualizar o DOM para exibir os elementos React.
+
+#
+# Componentes e Props
+Conceitualmente, componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
+
+<ul>
+<li><strong>Componentes de Função:</strong> é um componente React válido ao argumento de objeto “props” (que significa propriedades) com dados e retorna o elemento React. </li>
+<li>Você também pode usar uma classe ES6 para definir um componente.</li>
+</ul>
+
+#
+#### OBS: Componentes permitem você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente.
+#
+
+<strong>Props são Somente Leitura:</strong> Independente se você declarar um componente como uma função ou uma classe, ele nunca deve modificar seus próprios props.
+
+<code>
+function sum(a, b) {</br>
+  return a + b;</br>
+}
+</code>
+
+#
+
+Tais funções são chamadas “puras” porque elas não tentam alterar suas entradas e sempre retornam o mesmo resultado para as mesmas entradas.
+
+
+
