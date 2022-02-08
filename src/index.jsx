@@ -82,10 +82,10 @@ ReactDOM.render(
 //    return <h1>Hello, {this.props.name}</h1>;
 //   }
 // }
-const element = <Comment avatarUrl= 'https://avatars.githubusercontent.com/u/20023147?v=4'
-name= 'Bruno'
+const element = <Comment avatarUrl= 'https://avatars.githubusercontent.com/u/90467046?s=40&v=4'
+name= 'Stephanie Paiva'
 text= 'lorem ipsum dolor set amment'
-date= '1994-11-21' />;
+date= '2001-06-30'/>;
 
 ReactDOM.render(
   element,
