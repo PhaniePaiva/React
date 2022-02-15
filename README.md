@@ -57,7 +57,7 @@ Tais funções são chamadas “puras” porque elas não tentam alterar suas en
 O state contém dados específicos ao componente que podem mudar com o tempo. O state é definido pelo usuário e deve ser um objeto JavaScript.
 #
 
-<strong> Métodos de Ciclo de Vida: <strong> São métodos especiais no componente de classe para executar algum código quando um componente é montado e desmontado
+<strong> Métodos de Ciclo de Vida: </strong> São métodos especiais no componente de classe para executar algum código quando um componente é montado e desmontado
 
 #
 
