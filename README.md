@@ -83,7 +83,7 @@ this.setState({comment: 'Hello'});
 #
 
 <ul>
-<li>Atualizações de State Podem Ser Assíncronas => Quando você chama setState(), o React mescla o objeto que você fornece ao state atual.
+<li>Atualizações de State Podem Ser Assíncronas => O React pode agrupar várias chamadas setState() em uma única atualização para desempenho.
 
 </li>
 </ul>
@@ -95,12 +95,10 @@ this.setState((state, props) => ({<br>
 }));
 </code>
 
-#### OBS: O React pode agrupar várias chamadas setState() em uma única atualização para desempenho.
-
 #
 
 <ul>
-<li>Atualizações de State São Mescladas
+<li>Atualizações de State São Mescladas => Quando você chama setState(), o React mescla o objeto que você fornece ao state atual.
 </li>
 </ul>
 
