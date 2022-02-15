@@ -76,7 +76,7 @@ Existem três coisas que você deve saber sobre setState().
 <code>
 // Correto<br>
 this.setState({comment: 'Hello'});
-<code>
+</code>
 
 #### OBS: O único lugar onde você pode atribuir this.state é o construtor.
 
@@ -93,7 +93,7 @@ this.setState({comment: 'Hello'});
 this.setState((state, props) => ({<br>
   counter: state.counter + props.increment <br>
 }));
-<code>
+</code>
 
 #### OBS: O React pode agrupar várias chamadas setState() em uma única atualização para desempenho.
 
@@ -112,7 +112,7 @@ this.setState((state, props) => ({<br>
       comments: []<br>
     };<br>
   }
-<code>
+</code>
 
 Então você pode atualizá-los independentemente com chamadas separadas do setState():
 
@@ -130,4 +130,8 @@ Então você pode atualizá-los independentemente com chamadas separadas do setS
       });<br>
     });<br>
   }
-<code>
+</code>
+
+#
+#### Os Dados Fluem para Baixo: É por isso que o state é geralmente chamado de local ou encapsulado. Não é acessível a nenhum componente que não seja o que o possui e o define.
+
