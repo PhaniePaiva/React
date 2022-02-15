@@ -18,3 +18,9 @@ COMPONENTES E PROPS
 Nota: Sempre inicie os nomes dos componentes com uma letra maiúscula.
 
 O React trata componentes começando com letras minúsculas como tags do DOM. Por exemplo, <div /> representa uma tag div do HTML, mas <Welcome /> representa um componente e requer que Welcome esteja no escopo.
+
+
+STATE E CICLO DE VIDA 
+
+Adicionando Estado Local a uma Classe
+Utilizando o state foi possivel simplificar o código, sendo obrigatorio o uso de um construtor para ser adicionado o valor inicial, para que não ocorra erros da substituição do props para state

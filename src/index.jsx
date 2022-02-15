@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import Comment from './componentes/Comment';
+import Clock from './componentes/Clock';
+//import App from './App';
+//import Comment from './componentes/Comment';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 //Menor Exemplo de react
 // ReactDOM.render(
@@ -51,6 +52,7 @@ ReactDOM.render(
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+// Function relogio - Modelo de renderização de Elementos
 // const element = <h1>Olá, Mundão</h1>;
 
 // function tick() {
@@ -63,6 +65,23 @@ ReactDOM.render(
 //   ReactDOM.render(element, document.getElementById('root'));
 // }
 // setInterval(tick, 1000);
+
+// Modelo de função renderizada e encapsulada 
+// function tick() {
+//   ReactDOM.render(
+//     <Clock date={new Date()} />,
+//     document.getElementById('root')
+//   );
+// }
+
+function tick() {
+  ReactDOM.render(
+    <Clock />,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
 
 
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -82,12 +101,11 @@ ReactDOM.render(
 //    return <h1>Hello, {this.props.name}</h1>;
 //   }
 // }
-const element = <Comment avatarUrl= 'https://avatars.githubusercontent.com/u/90467046?s=40&v=4'
-name= 'Stephanie Paiva'
-text= 'lorem ipsum dolor set amment'
-date= '2001-06-30'/>;
 
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
+
+// const element = <Comment avatarUrl= 'https://avatars.githubusercontent.com/u/90467046?s=40&v=4'
+// name= 'Stephanie Paiva'
+// text= 'lorem ipsum dolor set amment'
+// date= '2001-06-30'/>;
+
+

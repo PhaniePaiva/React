@@ -51,5 +51,83 @@ function sum(a, b) {</br>
 
 Tais funções são chamadas “puras” porque elas não tentam alterar suas entradas e sempre retornam o mesmo resultado para as mesmas entradas.
 
+#
+
+# Estado e Ciclo de Vida
+O state contém dados específicos ao componente que podem mudar com o tempo. O state é definido pelo usuário e deve ser um objeto JavaScript.
+#
+
+<strong> Métodos de Ciclo de Vida: <strong> São métodos especiais no componente de classe para executar algum código quando um componente é montado e desmontado
+
+#
+
+<code> Mais Referências
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ 
+</code>
+
+#### Usando o State Corretamente
+Existem três coisas que você deve saber sobre setState().
 
 
+<ul>
+<li>Não Modifique o State Diretamente</li>
+</ul>
+
+<code>
+// Correto<br>
+this.setState({comment: 'Hello'});
+<code>
+
+#### OBS: O único lugar onde você pode atribuir this.state é o construtor.
+
+#
+
+<ul>
+<li>Atualizações de State Podem Ser Assíncronas => Quando você chama setState(), o React mescla o objeto que você fornece ao state atual.
+
+</li>
+</ul>
+
+<code>
+// Correto<br>
+this.setState((state, props) => ({<br>
+  counter: state.counter + props.increment <br>
+}));
+<code>
+
+#### OBS: O React pode agrupar várias chamadas setState() em uma única atualização para desempenho.
+
+#
+
+<ul>
+<li>Atualizações de State São Mescladas
+</li>
+</ul>
+
+<code>
+ constructor(props) {<br>
+    super(props);<br>
+    this.state = {<br>
+      posts: [],<br>
+      comments: []<br>
+    };<br>
+  }
+<code>
+
+Então você pode atualizá-los independentemente com chamadas separadas do setState():
+
+<code>
+ componentDidMount() {<br>
+    fetchPosts().then(response => {<br>
+      this.setState({<br>
+        posts: response.posts<br>
+      });<br>
+    });<br>
+<br>
+    fetchComments().then(response => {<br>
+      this.setState({<br>
+        comments: response.comments<br>
+      });<br>
+    });<br>
+  }
+<code>
